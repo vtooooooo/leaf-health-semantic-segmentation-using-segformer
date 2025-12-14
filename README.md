@@ -3,6 +3,7 @@
 This repository contains an end-to-end deep learning pipeline for **semantic segmentation of leaf health**, classifying each pixel into **background**, **healthy leaf**, or **dry/damaged leaf**.
 The project fine-tunes **SegFormer-B0**, a transformer-based segmentation architecture, with extensive augmentation, hyperparameter tuning, and a combined **CE + Dice loss** objective to handle class imbalance.
 
+![Introduction](images/Leaf_Health)
 ---
 
 ## 📌 Project Overview
