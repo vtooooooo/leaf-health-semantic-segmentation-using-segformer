@@ -3,7 +3,7 @@
 This repository contains an end-to-end deep learning pipeline for **semantic segmentation of leaf health**, classifying each pixel into **background**, **healthy leaf**, or **dry/damaged leaf**.
 The project fine-tunes **SegFormer-B0**, a transformer-based segmentation architecture, with extensive augmentation, hyperparameter tuning, and a combined **CE + Dice loss** objective to handle class imbalance.
 
-![Introduction](images/Leaf_Health)
+![Introduction](images/Leaf_Health.png)
 ---
 
 ## 📌 Project Overview
@@ -59,7 +59,7 @@ SegFormer-B0 with:
 * Final head modified to output **3 classes**
 * Logits upsampled to match mask resolution
 
-Architecture visual (from PPT, slide 8):
+![Introduction](images/model_architecture.png)
 
 
 ---
@@ -79,11 +79,6 @@ Improves overlap and is effective for imbalanced classes.
 ```
 Total_Loss = 0.5 * CE + 0.5 * Dice
 ```
-
-This significantly improved dry-leaf segmentation (see report page 7).
-
-
----
 
 ## 🔍 Hyperparameter Tuning
 
@@ -111,7 +106,9 @@ From CE-only fine-tuning (report page 6):
 * Validation loss dropped steadily
 * Validation IoU improved across epochs
 
-
+![Introduction](images/Picture2.png)
+![Introduction](images/Picture3.png)
+![Introduction](images/Picture4.png)
 ---
 
 ## 🧪 Results
@@ -127,6 +124,7 @@ From CE-only fine-tuning (report page 6):
   * Sharper boundaries
     (Report pages 7–8)
 
+![Introduction](images/Picture5.png)
 
 ### **Qualitative**
 
@@ -134,6 +132,7 @@ From CE-only fine-tuning (report page 6):
 * After CE finetuning: clean segmentation on healthy/dry regions
 * After CE + Dice: best minority-class performance
 
+![Introduction](images/Picture6.png)
 
 ---
 
