@@ -31,7 +31,6 @@ The project fine-tunes **SegFormer-B0**, a transformer-based segmentation archit
   * Image 193 → Mask 193
   * Image 161 → Mask 161
 
-
 ---
 
 ## 🛠️ Preprocessing & Augmentation
@@ -101,9 +100,6 @@ We performed **Random Search** across:
 * Weight Decay = **0.05**
 * Optimizer = **AdamW**
 
-(From report page 5, and PPT slide 12.)
- 
-
 ---
 
 ## 📈 Training & Validation Performance
@@ -113,8 +109,6 @@ From CE-only fine-tuning (report page 6):
 * Training loss consistently decreased
 * Validation loss dropped steadily
 * Validation IoU improved across epochs
-
-These charts are included in this repo and shown in the report.
 
 
 ---
@@ -155,45 +149,22 @@ Also supports running predictions from Google Drive.
 
 ---
 
-## 📦 Repository Structure
-
-```
-├── data/                 # (Optionally store dataset paths or mounting info)
-├── models/               # Saved SegFormer models
-├── notebooks/            # Training, tuning, and inference notebooks
-├── scripts/              # Utility functions (preprocessing, metrics, prediction)
-├── README.md             # Project documentation
-```
-
----
-
 ## 🔗 Links
 
-Dataset, notebook, and model links are available in the report (page 9).
-
-
----
-
-## 🧑‍🤝‍🧑 Team
-
-* Lakshman Rajith
-* Vittu Darshan
-* Yogananda Manjunath
-
-(Project title & team list from PPT slide 2.)
+* Dataset: [Download Dataset](https://unhnewhaven-my.sharepoint.com/personal/vdars1_unh_newhaven_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fvdars1%5Funh%5Fnewhaven%5Fedu%2FDocuments%2FDeep%20Learning%20Project%2Fdedata&ga=1)
+* Notebook: [Notebook](https://colab.research.google.com/drive/18htI1d1acHcNqF-s0VMoTZ0xUqnZFkNC?usp=sharing)
+* Working Link: [Live Working](https://huggingface.co/spaces/darshanrdas/leaf_segmentation3)
 
 
 ---
 
 ## 📝 References
 
-Key papers on SegFormer, Dice Loss, ViT, FCN, and Albumentations are included in the report bibliography (page 8).
-
+* E. Xie, W. Wang, Z. Yu, A. Anandkumar, J. M. Alvarez, and P. Luo, “SegFormer: Simple and Efficient Design for Semantic Segmentation with Transformers,” arXiv preprint arXiv:2105.15203, 2021. https://arxiv.org/abs/2105.15203
+* F. Milletari, N. Navab, and S. A. Ahmadi, “V-Net: Fully Convolutional Neural Networks for Volumetric Medical Image Segmentation,” arXiv preprint arXiv:1606.04797, 2016. https://arxiv.org/abs/1606.04797
+* J. Long, E. Shelhamer, and T. Darrell, “Fully Convolutional Networks for Semantic Segmentation,” arXiv preprint arXiv:1411.4038, 2015. https://arxiv.org/abs/1411.4038
+* A. Dosovitskiy et al., “An Image is Worth 16×16 Words: Transformers for Image Recognition at Scale,” arXiv preprint arXiv:2010.11929, 2020. https://arxiv.org/abs/2010.11929
+* A. Buslaev, V. I. Iglovikov, E. Khvedchenya, A. Parinov, M. Druzhinin, and A. A. Kalinin, “Albumentations: Fast and Flexible Image Augmentations,” Information, vol. 11, no. 2, 2020. https://www.mdpi.com/2078-2489/11/2/125
+* I. Loshchilov and F. Hutter, “Decoupled Weight Decay Regularization,” arXiv preprint arXiv:1711.05101, 2019. https://arxiv.org/abs/1711.05101
 
 ---
-
-If you want, I can also generate:
-✅ A GitHub cover image
-✅ Badges (Python version, Model size, License, etc.)
-✅ A short tagline for the repository
-Just tell me!
